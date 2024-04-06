@@ -52,7 +52,7 @@ def fade_image(image, pos, fade_in=True, fade_out=True, duration=10):
 
 # Find all JPG images in the directory
 pics = []
-for root, dirs, files in os.walk("/media/charliepi/ATree/MasterPicsResize_SPLIT/1"):
+for root, dirs, files in os.walk("/home/pi/Pictures/MasterPicsResize_SPLIT/"):
   for filename in files:
     if filename.endswith(".jpg"):
       print(os.path.join(root, filename))
