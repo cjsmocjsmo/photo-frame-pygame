@@ -82,12 +82,12 @@ while running:
     newheight = 1000 // aratio
     
     if imgw < imgh:
-      image = pygame.transform.scale(image, (1000, 563))
-      position = ((screen_width - 1000) // 2, (screen_height - 563) // 2)
+      image = pygame.transform.scale(image, (1000, newheight))
+      position = ((screen_width - 1000) // 2, (screen_height - newheight) // 2)
       
     else:
-      image = pygame.transform.scale(image, (563, 1000))
-      position = ((screen_width - 563) // 2, (screen_height - 1000) // 2)
+      image = pygame.transform.scale(image, (newheight, 1000))
+      position = ((screen_width - newheight) // 2, (screen_height - 1000) // 2)
     print(position)  
 
     # screen.blit(image, position)
