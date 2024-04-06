@@ -69,8 +69,8 @@ while running:
       running = False
 
   # Loop through each image
-  for imagee in pics:
-    image = pygame.image.load(imagee)
+  for img in pics:
+    image = pygame.image.load(img)
     # Resize image to fit the screen (optional)
     # image = pygame.transform.scale(image, (screen_width, screen_height))
     screen_width, screen_height = screen.get_size()
