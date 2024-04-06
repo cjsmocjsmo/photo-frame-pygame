@@ -5,29 +5,29 @@ import os
 pygame.init()
 
 ##################USE THIS IN PRODUCTION
-# Define screen size (full screen)
-# screen_width = pygame.display.Info().current_w
-# screen_height = pygame.display.Info().current_h
+## Define screen size (full screen)
+screen_width = pygame.display.Info().current_w
+screen_height = pygame.display.Info().current_h
 
-# # Set window to fullscreen and hide decorations
-# screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN | pygame.HWSURFACE | pygame.DOUBLEBUF)
+## Set window to fullscreen and hide decorations
+screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN | pygame.HWSURFACE | pygame.DOUBLEBUF)
 ############################################################################################################
 
 
 ##################USE THIS FOR TESTING
 
 # Define screen size
-screen_width = 1300
-screen_height = 900
+# screen_width = 1300
+# screen_height = 900
 
-# # Set window size
-screen = pygame.display.set_mode((screen_width, screen_height), pygame.HWSURFACE | pygame.DOUBLEBUF)
+# # # Set window size
+# screen = pygame.display.set_mode((screen_width, screen_height), pygame.HWSURFACE | pygame.DOUBLEBUF)
 
 #########################################################################################
 
 
 
-pygame.display.set_caption("Image Viewer")
+# pygame.display.set_caption("Image Viewer")
 # Hide mouse cursor
 pygame.mouse.set_visible(False)
 
