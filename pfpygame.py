@@ -101,7 +101,7 @@ while running:
 
     # Fade image out
     fade_image(image, position, fade_in=False)
-    pygame.time.wait(12 * 1000)
+    # pygame.time.wait(12 * 1000)
     screen.fill((0, 0, 0))
 
 # Quit Pygame
