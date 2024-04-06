@@ -87,7 +87,7 @@ while running:
       
     else:
       image = pygame.transform.scale(image, (563, 1000))
-      position = ((screen_width - 1000) // 2, (screen_height - 563) // 2)
+      position = ((screen_width - 563) // 2, (screen_height - 1000) // 2)
     print(position)  
 
     # screen.blit(image, position)
