@@ -14,12 +14,6 @@ if [ ! -f /etc/systemd/system/photoframepygame.service ]; then
     sudo systemctl enable photoframepygame.service;
 fi
 
-if [ ! -d /usr/share/photo-frame-pygame ]; then
-    sudo mkdir /usr/share/photo-frame-pygame;
-    sudo chown -R $USER:$USER /usr/share/photo-frame-pygame;
-    sudo chmod -R 755 /usr/share/photo-frame-pygame;
-fi
-
 if [ ! -d /usr/share/photo-frame-pygame/photo-frame-pygame ]; then
     cd /usr/share/photo-frame-pygame;
     git clone http://github.com/cjsmocjsmo/photo-frame-pygame.git;
