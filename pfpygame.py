@@ -78,8 +78,8 @@ while running:
     imgw, imgh = image.get_size()
 
     aratio = imgw // imgh
-    newwidth = 1200
-    newheight = 1200 // aratio
+    newwidth = 1000
+    newheight = 1000 // aratio
     
     if imgw < imgh:
       image = pygame.transform.scale(image, (newwidth, newheight))
