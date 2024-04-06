@@ -56,7 +56,8 @@ for root, dirs, files in os.walk("/home/pi/Pictures/MasterPicsResize_SPLIT/"):
   for filename in files:
     if filename.endswith(".jpg"):
       print(os.path.join(root, filename))
-      pics.append(pygame.image.load(os.path.join(root, filename)))
+      pics.append(os.path.join(root, filename))
+      # pics.append(pygame.image.load(os.path.join(root, filename)))
   # if filename.endswith(".jpg"):
   #   pics.append(pygame.image.load(os.path.join("/home/pimedia/", filename)))
 
@@ -69,7 +70,7 @@ while running:
 
   # Loop through each image
   for image in pics:
-    
+    pygame.image.load(image)
     # Resize image to fit the screen (optional)
     # image = pygame.transform.scale(image, (screen_width, screen_height))
     screen_width, screen_height = screen.get_size()
